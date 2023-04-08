@@ -4,7 +4,9 @@
     hosts: localhost
     tasks:
       - name: Add two lines in /tmp/file.txt
-        lineinfile:
+        blockinfile:
           path: /tmp/file.txt
-          line: "This is line1\nThis is line2"
+          block: |
+            This is line 1
+            This is line 2
 
