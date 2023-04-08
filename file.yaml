@@ -3,11 +3,11 @@
     hosts: localhost
     tasks: 
       - name: Create file under /tmp
-        file: 
-          path: /tmp/file.txt
-          state: touch
-          
-
-
-
+          file: 
+            setype: /tmp/file.txt
+              "This is line 1"\n
+              "This is line 2"
     
+
+
+
