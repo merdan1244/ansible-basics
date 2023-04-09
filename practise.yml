@@ -6,3 +6,10 @@
         file:
           path: /tmp/file.txt
           state: touch
+
+      - name: Add two lines in /tmp/file.txt
+        blockinfile:
+          path: /tmp/file.txt
+          block: |
+            Hail to our great leader Mustafa Kemal Ataturk
+            Long live Repuclic of Turkey    
