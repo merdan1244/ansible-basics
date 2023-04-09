@@ -1,0 +1,8 @@
+---
+  - name: Create a file under /tmp
+    hosts: localhost
+    tasks:
+      - name: Create empty file under /tmp
+        file:
+          path: /tmp/file.txt
+          state: touch
