@@ -7,3 +7,6 @@
           path: /etc/selinux/config
           regexp: "^SELINUX="
           line: SELINUX=disabled
+      - name: Restart to disable SELinux
+        command: reboot
+   
