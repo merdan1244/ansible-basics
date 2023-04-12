@@ -1,0 +1,11 @@
+---
+  - name: Permissions
+    hosts: localhost
+    tasks:
+      - name: creating files
+        file:
+          path: /root/test_config1
+            state: touch
+            
+
+          
