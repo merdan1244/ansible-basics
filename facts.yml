@@ -1,0 +1,9 @@
+---
+  - name: The operating system of host1
+    hosts: all
+    gather_facts: yes
+    tasks:
+      - name: check OS
+        debug:
+          msg: ansible_distribution
+        
